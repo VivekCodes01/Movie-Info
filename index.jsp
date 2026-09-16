@@ -163,8 +163,7 @@
 		{
 
 	
-	if(movie==null)
-	out.println("Enter movie name");
+		
 		
 	if(movie != null )
 	{
@@ -222,13 +221,7 @@
 }
 		
 	}
-	else
-	{
-		out.println("Movie name required");
-		return;
-
-	}
-	}
+		}
 	catch(Exception e)
 		{
 			out.println("Movie not found"+e);
