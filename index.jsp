@@ -210,7 +210,7 @@
 		rating=obj.optString("imdbRating")	;
 		boxoffice=obj.optString("BoxOffice")	;
 		poster=obj.optString("Poster");
-		type==obj.optString("Type");
+		type=obj.optString("Type");
 
 		found = true;
 		}
