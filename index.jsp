@@ -155,7 +155,7 @@
 <%
 	String movie = request.getParameter("search");
 
-	String name="",year="",released="",runtime="",genre="",actors="",lang="",country="",plot="",res="",rating="",boxoffice="",poster="";
+	String name="",year="",released="",runtime="",genre="",actors="",lang="",country="",plot="",res="",rating="",boxoffice="",poster="",type="";
 	boolean found=false;
 
 	
@@ -210,6 +210,7 @@
 		rating=obj.optString("imdbRating")	;
 		boxoffice=obj.optString("BoxOffice")	;
 		poster=obj.optString("Poster");
+		type==obj.optString("Type");
 
 		found = true;
 		}
@@ -244,6 +245,7 @@
 <p>Plot:<%=plot%></p>
 <p>language:<%=lang%></p>
 <p>Country:<%=country%></p>
+<p>Type:<%=type%></p>
 <p>IBM Rating:<%=rating%></p>
 <p>Box Office Collection:<%=boxoffice%></p>	
 <img src="<%=poster%>" class="poster">
