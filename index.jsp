@@ -51,6 +51,15 @@
 
     font-family: Arial, sans-serif;
 }
+.not-found {
+    margin: 40px auto;
+    padding: 20px;
+    width: 400px;
+    color: #352f5c;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 		.poster {
     width: 200px;
     height: 300px;
@@ -142,6 +151,7 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
+
 	</style>
 <body>
 
@@ -216,7 +226,7 @@
 		}
 		else
 		{
-			out.println("Movie not found");
+			out.println("<h2 class='not-found'> Movie Not Found</h2>");
 		}
 
 }
